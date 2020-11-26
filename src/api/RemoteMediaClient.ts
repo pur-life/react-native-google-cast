@@ -48,8 +48,8 @@ export default class RemoteMediaClient {
    *
    * @param customData Custom application-specific data to pass along with the request.
    */
-  pause(customData?: object): Promise<void> {
-    return Native.pause(customData)
+  pause(): Promise<void> {
+    return Native.pause()
   }
 
   /**
@@ -59,8 +59,8 @@ export default class RemoteMediaClient {
    *
    * @param customData Custom application-specific data to pass along with the request.
    */
-  play(customData?: object): Promise<void> {
-    return Native.play(customData)
+  play(): Promise<void> {
+    return Native.play()
   }
 
   /**
